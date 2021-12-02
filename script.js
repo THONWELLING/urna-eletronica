@@ -11,11 +11,15 @@ let numbers = document.querySelector('.upLeft-3')
 
 let currentStep = 0
 let number = ''
+let voteBlank = false
 
 const stepStart = () => {
   let step = etapas[currentStep]
 
   let htmlNumber = ''
+  number = ''
+  voteBlank = false
+
   for(let i=0; i < step.numbers; i++) {
    if(i === 0){
     htmlNumber += '<div class="numbers pisca"></div>'
@@ -49,7 +53,12 @@ const interfaceUpdate = () => {
 
     let htmlPhotos = ''
     for(let i in candidate.photos) {
-      htmlPhotos += `<div class="upRightImage"><img src="./assets/img/${candidate.photos[i].url}" alt="" />${candidate.photos[i].subtitle}</div>`
+      if(candidate.photos[i].small) {
+        htmlPhotos += `<div class="upRightImage small"><img src="./assets/img/${candidate.photos[i].url}" alt="" />${candidate.photos[i].subtitle}</div>`
+      } else {
+        htmlPhotos += `<div class="upRightImage"><img src="./assets/img/${candidate.photos[i].url}" alt="" />${candidate.photos[i].subtitle}</div>`
+
+      }
     }
     rightSide.innerHTML = htmlPhotos
   } else {
@@ -77,12 +86,40 @@ const clicou = (n) => {
   }
 }
 const white = () => {
-  alert('clicou em '+'white')
+  if(number === '') {
+    voteBlank = true
+
+    yourVoteTo.style.display = 'block'
+    notices.style.display = 'block'
+    numbers.innerHTML = ''
+    description.innerHTML = '<div class="bigNotice pisca">Voto Em Branco</div>'
+    rightSide.innerHTML = ''
+  } else {
+    alert('Para Votar Em Branco Tecle Corrige Depois Tecle Branco e Depois Confirma ')
+  }
 }
 const fix = () => {
-  alert('clicou em '+'fix')
+  stepStart()
 }
 const confirm = () => {
-  alert('clicou em '+'confirm')
+  let step = etapas[currentStep]
+  let confirmedVote = false
+
+  if(voteBlank === true) {
+    confirmedVote = true
+    console.log('confirmando com voto em branco')
+  } else if(number.length === step.numbers) {
+    confirmedVote = true
+  console.log('confirmando com numeros '+number)
+  }
+
+  if(confirmedVote) {
+    currentStep ++
+    if(etapas[currentStep] !== undefined) {
+      stepStart()
+    } else {
+      alert('FIM DA VOTAÇÃO')
+    }
+  }
 }
 stepStart()

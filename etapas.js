@@ -99,7 +99,7 @@ let etapas = [
         cla: 'Uzumaki',
         vice: 'Yahiko ',
         photos: [
-          {url: 'nagato.png', subtitle: 'Hokage'},
+          {url: 'nagato.jpg', subtitle: 'Hokage'},
           {url: 'yahiko.jpg', subtitle: 'Vice-Hokage', small: true}
         ]
       },

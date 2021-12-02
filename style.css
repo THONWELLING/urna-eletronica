@@ -113,6 +113,7 @@ body {
   text-align: center;
   line-height: 40px;
   font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
   margin: 0 10px 0 0;
 }
 .pisca {
@@ -147,7 +148,7 @@ body {
   height: 90px;
   font-size: 18px;
   color: #aaa;
-  border-top: 2px solid #000;
+  border-top: 2px solid rgb(120, 91, 218);
   padding-left: 10px;
   text-transform: capitalize;
   font-style: italic;

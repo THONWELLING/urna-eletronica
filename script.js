@@ -33,7 +33,31 @@ const stepStart = () => {
 }
 
 const interfaceUpdate = () => {
-  alert('finalizou os números')
+  let step = etapas[currentStep]
+  let candidate = step.candidates.filter((item) => {
+    if(item.number === number) {
+      return true
+    } else {
+      return false
+    }
+  })
+  if(candidate.length > 0) {
+    candidate = candidate[0]
+    yourVoteTo.style.display = 'block'
+    notices.style.display = 'block'
+    description.innerHTML = `Nome: ${candidate.name}<br />Clã: ${candidate.cla}`
+
+    let htmlPhotos = ''
+    for(let i in candidate.photos) {
+      htmlPhotos += `<div class="upRightImage"><img src="./assets/img/${candidate.photos[i].url}" alt="" />${candidate.photos[i].subtitle}</div>`
+    }
+    rightSide.innerHTML = htmlPhotos
+  } else {
+    yourVoteTo.style.display = 'block'
+    notices.style.display = 'block'
+    description.innerHTML = '<div class="bigNotice pisca">VOTO NULO</div>'
+  }
+  console.log('Candidato', candidate)
 }
 
 //funções dos botões 
@@ -46,9 +70,9 @@ const clicou = (n) => {
 
     numb.classList.remove('pisca')
     if(numb.nextElementSibling !== null) {
-    numb.nextElementSibling.classList.add('pisca')
+      numb.nextElementSibling.classList.add('pisca')
     } else {
-      interfaceUpdate()
+      interfaceUpdate();
     }
   }
 }

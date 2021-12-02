@@ -23,13 +23,19 @@ body {
   padding: 30px;
   display: flex;
 }
+.screenContainer {
+  background-image: url("./assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .screen {
   width: 520px;
   height: 420px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #e8e8e8, #c1c1c1);
   border: 2px solid #403a3a;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
 }
 .keyboard {
   background-color: #403a3a;
@@ -49,7 +55,7 @@ body {
   margin: 10px;
   background-color: #000;
   color: #fff;
-  font-size: 25px;
+  font-size: 28px;
   cursor: pointer;
   box-shadow: 2px 2px 0px #555;
   border-radius: 10px;
@@ -58,7 +64,7 @@ body {
 .btnFix,
 .btnConfirm {
   color: #000;
-  font-size: 15px;
+  font-size: 18px;
 }
 .btnWhite {
   background-color: #fff;
@@ -87,10 +93,14 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
-}
-.upLeft-2 {
   justify-content: center;
-  font-size: 25px;
+  font-size: 30px;
+}
+.upLeft-1 {
+  color: #999;
+}
+.upLeft-2 span {
+  text-shadow: 2px 2px 2px #ddd;
 }
 .upLeft-3 {
   height: 50px;
@@ -99,10 +109,11 @@ body {
   display: inline-block;
   width: 30px;
   height: 40px;
-  border: 1px solid #000;
+  border: 2px solid #aaa;
   text-align: center;
   line-height: 40px;
   font-size: 25px;
+  margin: 0 10px 0 0;
 }
 .pisca {
   animation-name: pisca;
@@ -112,6 +123,7 @@ body {
 .upLeft-4 {
   flex: 1;
   line-height: 30px;
+  color: #999;
 }
 .upRight {
   width: 120px;
@@ -132,14 +144,25 @@ body {
   width: 80%;
 }
 .down {
-  height: 50px;
-  font-size: 14px;
+  height: 90px;
+  font-size: 18px;
+  color: #aaa;
   border-top: 2px solid #000;
   padding-left: 10px;
   text-transform: capitalize;
   font-style: italic;
+  line-height: 30px;
 }
 .down span {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.bigNotice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bolder;
 }

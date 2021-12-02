@@ -4,7 +4,7 @@ let etapas = [
     numbers: 2,
     candidates: [
       {
-        number: 99,
+        number: '89',
         name: 'Namikaze Minato',
         cla: 'Namikaze',
         vice: 'Uzumaki Kushina',
@@ -14,7 +14,7 @@ let etapas = [
         ]
       },
       {
-        number: 98,
+        number: '86',
         name: 'Uzumaki Naruto',
         cla: 'Uzumaki',
         vice: 'Hyuga Hinata',
@@ -24,7 +24,7 @@ let etapas = [
         ]
       },
       {
-        number: 97,
+        number: '39',
         name: 'Uchiha Sasuke',
         cla: 'Uchiha',
         vice: 'Haruno Sakura',
@@ -34,7 +34,7 @@ let etapas = [
         ]
       },
       {
-        number: 96,
+        number: '57',
         name: 'Hatake Kakashi',
         cla: 'Hatake',
         vice: 'Uchiha Obito',
@@ -44,7 +44,7 @@ let etapas = [
         ]
       },
       {
-        number: 95,
+        number: '43',
         name: 'Senju Tsunade',
         cla: 'Senju',
         vice: 'Hatake Jiraiya',
@@ -54,7 +54,7 @@ let etapas = [
         ]
       },
       {
-        number: 94,
+        number: '64',
         name: 'Uchiha Hitachi',
         cla: 'Uchiha',
         vice: 'Uchiha Shisui',
@@ -64,7 +64,7 @@ let etapas = [
         ]
       },
       {
-        number: 93,
+        number: '85',
         name: 'Sarutobi Hiruzen',
         cla: 'Sarutobi',
         vice: 'Shimura Danzou ',
@@ -74,7 +74,7 @@ let etapas = [
         ]
       },
       {
-        number: 92,
+        number: '41',
         name: 'Might Guy',
         cla: 'Might',
         vice: 'Rock Lee ',
@@ -84,7 +84,7 @@ let etapas = [
         ]
       },
       {
-        number: 91,
+        number: '65',
         name: 'Orochimaru',
         cla: 'Desconhecido',
         vice: 'Yakushi Kabuto ',
@@ -94,7 +94,7 @@ let etapas = [
         ]
       },
       {
-        number: 90,
+        number: '94',
         name: 'Uzumaki Nagato',
         cla: 'Uzumaki',
         vice: 'Yahiko ',
@@ -110,7 +110,7 @@ let etapas = [
     numbers: 5,
     candidates: [
       {
-        number: 31128,
+        number: '74134',
         name: 'Nara Shikamaru',
         cla: 'Nara',
         photos: [
@@ -118,7 +118,7 @@ let etapas = [
         ]
       },
       {
-        number: 21185,
+        number: '11356',
         name: 'Yamanaka Ino',
         cla: 'Yamanaka',
         photos: [
@@ -126,7 +126,7 @@ let etapas = [
         ]
       },
       {
-        number: 42265,
+        number: '29389',
         name: 'Yamato',
         cla: 'Desconhecido',
         photos: [
@@ -134,7 +134,7 @@ let etapas = [
         ]
       },
       {
-        number: 12607,
+        number: '15966',
         name: 'Hyuga Neji',
         cla: 'Hyuga',
         photos: [
@@ -142,7 +142,7 @@ let etapas = [
         ]
       },
       {
-        number: 22808,
+        number: '57055',
         name: 'Yamanaka Sai',
         cla: 'Yamanaka',
         photos: [
@@ -150,7 +150,7 @@ let etapas = [
         ]
       },
       {
-        number: 32154,
+        number: '28785',
         name: 'Dan Kato Shizune',
         cla: 'Dan Kato',
         photos: [

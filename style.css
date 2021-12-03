@@ -17,11 +17,14 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Times New Roman", Times, serif;
+  background-image: url("./assets/img/bg2.jpg");
+  background-position: center;
 }
 .urna {
   background-color: #dbd5c9;
   padding: 30px;
   display: flex;
+  margin-top: 12vh;
 }
 .screenContainer {
   background-image: url("./assets/img/bg.jpg");

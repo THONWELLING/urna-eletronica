@@ -167,3 +167,14 @@ body {
   font-size: 40px;
   font-weight: bolder;
 }
+.gigantNotice {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  text-shadow: 2px 2px 2px #f09046;
+}

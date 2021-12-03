@@ -12,6 +12,7 @@ let numbers = document.querySelector('.upLeft-3')
 let currentStep = 0
 let number = ''
 let voteBlank = false
+let votes = []
 
 const stepStart = () => {
   let step = etapas[currentStep]
@@ -107,10 +108,16 @@ const confirm = () => {
 
   if(voteBlank === true) {
     confirmedVote = true
-    console.log('confirmando com voto em branco')
+    votes.push({
+      step: etapas[currentStep].title,
+      vote: 'Branco'
+    })
   } else if(number.length === step.numbers) {
     confirmedVote = true
-  console.log('confirmando com numeros '+number)
+    votes.push({
+      step: etapas[currentStep].title,
+      vote: number
+    })
   }
 
   if(confirmedVote) {
@@ -118,7 +125,8 @@ const confirm = () => {
     if(etapas[currentStep] !== undefined) {
       stepStart()
     } else {
-      alert('FIM DA VOTAÇÃO')
+      document.querySelector('.screen').innerHTML ='<div class="gigantNotice pisca">FIM DA VOTAÇÃO</div>'
+      console.log(votes)
     }
   }
 }
